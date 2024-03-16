@@ -7,18 +7,8 @@ import os
 
 from variables import time_window, OUTPUT_DIR, PROSP_DIR, MODEL_DIR
 
-# Choose time window
-
-# time_window = 4
-
-# OUTPUT_DIR = f"/home/contreras.miguel/deepacu/main/{time_window}h_window"
-# PROSP_DIR = f"/home/contreras.miguel/deepacu/main/prospective/{time_window}h_window"
-# MODEL_DIR = (
-#     f"/home/contreras.miguel/deepacu/main/baseline_models/gru/{time_window}h_window"
-# )
-
-# if not os.path.exists(MODEL_DIR):
-#     os.makedirs(MODEL_DIR)
+if not os.path.exists(MODEL_DIR):
+    os.makedirs(MODEL_DIR)
 
 #%%
 
