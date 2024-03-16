@@ -19,12 +19,6 @@ import os
 
 from variables import time_window, MODEL_DIR
 
-# Choose time window
-
-# time_window = 4
-# MODEL_DIR = f"/home/contreras.miguel/deepacu/main/baseline_models/transformer/{time_window}h_window/results"
-
-
 #%%
 
 groups = [
@@ -36,9 +30,9 @@ groups = [
 
 for group in groups:
 
-    model_true = pd.read_csv(f"{MODEL_DIR}/{group[1]}_true_labels.csv")
+    model_true = pd.read_csv(f"{MODEL_DIR}/results/{group[1]}_true_labels.csv")
 
-    model_probs = pd.read_csv(f"{MODEL_DIR}/{group[1]}_pred_labels.csv")
+    model_probs = pd.read_csv(f"{MODEL_DIR}/results/{group[1]}_pred_labels.csv")
 
     cols = model_probs.columns.tolist()
 
@@ -167,4 +161,4 @@ for group in groups:
 
     metrics_df.columns = metrics
 
-    metrics_df.to_csv(f"{MODEL_DIR}/{group[1]}_metrics.csv", index=None)
+    metrics_df.to_csv(f"{MODEL_DIR}/results/{group[1]}_metrics.csv", index=None)
