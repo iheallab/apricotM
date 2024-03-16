@@ -5,15 +5,7 @@ import numpy as np
 import pickle
 import os
 
-# Choose time window
-
 from variables import time_window, OUTPUT_DIR, PROSP_DIR, MODEL_DIR
-
-# time_window = 4
-
-# OUTPUT_DIR = f"/home/contreras.miguel/deepacu/main/{time_window}h_window"
-# PROSP_DIR = f"/home/contreras.miguel/deepacu/main/prospective/{time_window}h_window"
-# MODEL_DIR = f"/home/contreras.miguel/deepacu/main/baseline_models/transformer/{time_window}h_window"
 
 if not os.path.exists(MODEL_DIR):
     os.makedirs(MODEL_DIR)
