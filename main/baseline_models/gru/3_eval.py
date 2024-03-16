@@ -12,11 +12,6 @@ import time
 
 from variables import time_window, MODEL_DIR
 
-# time_window = 4
-# MODEL_DIR = (
-#     f"/home/contreras.miguel/deepacu/main/baseline_models/gru/{time_window}h_window"
-# )
-
 if not os.path.exists(f"{MODEL_DIR}/results"):
     os.makedirs(f"{MODEL_DIR}/results")
 
