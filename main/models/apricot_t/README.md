@@ -1,1 +1,0 @@
-# APRICOT-T Model
