@@ -1,0 +1,6 @@
+HOME_DIR = "/home/contreras.miguel"
+time_window = 4
+OUTPUT_DIR = f"{HOME_DIR}/deepacu/main/{time_window}h_window"
+DATA_DIR = f"{HOME_DIR}/deepacu/main/prospective_cohort/{time_window}h_window"
+model = "apricotm"
+MODEL_DIR = f"{HOME_DIR}/deepacu/main/{time_window}h_window/model/{model}"
