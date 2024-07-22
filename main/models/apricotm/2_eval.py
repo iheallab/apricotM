@@ -10,14 +10,14 @@ import os
 
 #%%
 
-from variables import time_window, OUTPUT_DIR
+from variables import time_window, MODEL_DIR, OUTPUT_DIR
 
 #%%
 
 # Create directory to save results
 
-if not os.path.exists(f"{OUTPUT_DIR}/model/apricotm/results"):
-    os.makedirs(f"{OUTPUT_DIR}/model/apricotm/results")
+if not os.path.exists(f"{MODEL_DIR}/results"):
+    os.makedirs(f"{MODEL_DIR}/results")
 
 #%%
 
@@ -26,7 +26,7 @@ if not os.path.exists(f"{OUTPUT_DIR}/model/apricotm/results"):
 from apricotm import ApricotM
 
 model_architecture = torch.load(
-    f"{OUTPUT_DIR}/model/apricotm/apricotm_architecture.pth"
+    f"{MODEL_DIR}/apricotm_architecture.pth"
 )
 DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -44,7 +44,7 @@ model = ApricotM(
 
 # Load model weights
 
-model.load_state_dict(torch.load(f"{OUTPUT_DIR}/model/apricotm/apricotm_weights.pth"))
+model.load_state_dict(torch.load(f"{MODEL_DIR}/apricotm_weights.pth", map_location=DEVICE))
 
 model_parameters = filter(lambda p: p.requires_grad, model.parameters())
 params = sum([np.prod(p.size()) for p in model_parameters])
@@ -55,7 +55,7 @@ print("Parameters: {}".format(params))
 
 import pickle
 
-with open("%s/model/apricotm/best_params.pkl" % OUTPUT_DIR, "rb") as f:
+with open("%s/best_params.pkl" % MODEL_DIR, "rb") as f:
     best_params = pickle.load(f)
 
 seq_len = best_params["seq_len"]
@@ -188,8 +188,8 @@ for cohort in cohorts:
     true_labels = pd.DataFrame(true_labels, columns=cols)
 
     true_labels.to_csv(
-        f"{OUTPUT_DIR}/model/apricotm/results/{cohort[1]}_true_labels.csv", index=None
+        f"{MODEL_DIR}/results/{cohort[1]}_true_labels.csv", index=None
     )
     pred_labels.to_csv(
-        f"{OUTPUT_DIR}/model/apricotm/results/{cohort[1]}_pred_labels.csv", index=None
+        f"{MODEL_DIR}/results/{cohort[1]}_pred_labels.csv", index=None
     )
