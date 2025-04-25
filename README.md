@@ -17,7 +17,12 @@ The repository contains the code implementation used for the paper APRICOT-Mamba
     *   `optuna`
     *   `catboost`
     *   `captum`
-    *   (It is recommended to include a `requirements.txt` file listing all specific dependencies and versions)
+    *   All required Python libraries are listed in the [requirements.txt](requirements.txt)    file. You can install them using:
+        ```bash
+        pip install -r requirements.txt
+        ```
+        (Note: Depending on your system and whether you need GPU support for PyTorch, you might need specific installation commands, especially for `torch`. Refer to the official PyTorch installation guide: https://pytorch.org/get-started/locally/)
+
 
 ### Hardware
 *   **CPU:** Standard multi-core processor.
