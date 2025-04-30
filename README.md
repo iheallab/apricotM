@@ -6,7 +6,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2311.02026-b31b1b)](https://arxiv.org/abs/2311.02026)
 
 
-📄 [Read the full paper (PDF)](https://www.researchsquare.com/article/rs-4790824/v1)
+📝 Paper is under review on [*Nature Communications*](https://www.researchsquare.com/article/rs-4790824/v1) ([📄PDF](https://www.researchsquare.com/article/rs-4790824/v1.pdf?c=1722920524000)).
 
 ---
 
