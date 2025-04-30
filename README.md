@@ -1,9 +1,15 @@
 # <p align="center"> 🍑 APRICOT-Mamba: Acuity Prediction in Intensive Care Unit (ICU)</p>
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/downloads/release/python-380/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-1.10%2B-red)](https://pytorch.org/)
-[![arXiv](https://img.shields.io/badge/arXiv-2311.02026-b31b1b)](https://arxiv.org/abs/2311.02026)
+<p align="center">
+  <a href="https://www.gnu.org/licenses/gpl-3.0">
+    <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3">
+  </a>
+  <img src="https://img.shields.io/badge/python-3.8%2B-blue" alt="Python 3.8+">
+  <img src="https://img.shields.io/badge/PyTorch-1.10%2B-red" alt="PyTorch">
+  <a href="https://arxiv.org/abs/2401.04081">
+    <img src="https://img.shields.io/badge/arXiv-2401.04081-b31b1b" alt="arXiv">
+  </a>
+</p>
 
 
 📝 Paper is under review on [*Nature Communications*](https://www.researchsquare.com/article/rs-4790824/v1) ([📄PDF](https://www.researchsquare.com/article/rs-4790824/v1.pdf?c=1722920524000)).
