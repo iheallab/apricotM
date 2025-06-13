@@ -8,6 +8,7 @@
   <a href="https://arxiv.org/abs/2401.04081">
     <img src="https://img.shields.io/badge/arXiv-2401.04081-b31b1b" alt="arXiv">
   </a>
+<a href="https://doi.org/10.5281/zenodo.15660131"><img src="https://zenodo.org/badge/769330692.svg" alt="DOI"></a>
 </p>
 
 
